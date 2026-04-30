@@ -33,7 +33,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  row-gap: 10px;
+  gap: 10px;
   padding: 30px;
   border-radius: 15px;
   color: var(--white);
@@ -50,7 +50,7 @@ body {
   position: absolute;
   display: flex;
   align-items: center;
-  column-gap: 5px;
+  gap: 5px;
   border: 1px solid var(--brighter-dark);
   padding: 8px;
   border-radius: 15px;
@@ -166,7 +166,7 @@ body {
 
 .card-icons {
   display: flex;
-  column-gap: 10px;
+  gap: 10px;
 }
 
 .card-icons a {
