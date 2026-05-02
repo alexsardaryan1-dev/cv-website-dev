@@ -1,101 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Sardaryan.CV.</title>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlexSardaryan-CV</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-  <!-- BURGER NAVIGATION -->
+  <!-- NAV -->
 
-  <aside class="burger-navigation" id="burgerNavigation">
-    <div class="burger-navIcons">
-      <h3>Menu</h3>
-      <span class="burger-closeIcon" id="burgerClose">
-        <i class="fa-solid fa-xmark"></i>
-      </span>
-    </div>
-    <nav class="burger-sections">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </aside>
+  <nav>
+    <div class="nav-logo">AS.dev()</div>
+    <ul class="nav-sections">
+      <li><a href="#hero">#home</a></li>
+      <li><a href="#about">#about</a></li>
+      <li><a href="#experience">#experience</a></li>
+      <li><a href="#skills">#skills</a></li>
+      <li><a href="#education">#education</a></li>
+      <li><a href="#contact">#contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- MAIN LAYOUT -->
+  <!-- SCROLL INDICATORS -->
 
-  <div class="container">
+  <div class="section-indicators">
+    <div class="dot active" data-target="hero"></div>
+    <div class="dot" data-target="about"></div>
+    <div class="dot" data-target="experience"></div>
+    <div class="dot" data-target="skills"></div>
+    <div class="dot" data-target="education"></div>
+    <div class="dot" data-target="contact"></div>
+  </div>
 
-    <!-- LEFT CARD-->
+  <!-- SECTION-HERO -->
 
-    <aside class="info-card">
-      <img src="images/me.jpeg" alt="Alex Sardaryan" />
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-occupation">FULL STACK DEVELOPER</div>
       <div class="open-to-work">
         <span class="pulsing-dot"></span>
-        <p>Open to work</p>
+        Open to work
       </div>
-      <h1>Alex Sardaryan</h1>
-      <p>Full Stack Developer</p>
-      <button class="contact-btn">Contact Me</button>
-
-      <div class="card-icons">
-        <a href="https://www.linkedin.com/in/alex-sardaryan-34b623398" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin-in icon-linkedin"></i>
-        </a>
-        <a href="https://github.com/alexsardaryan1-dev" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github icon-github"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61574108137463" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook-f icon-facebook"></i>
-        </a>
+      <h1 class="hero-name">Alex<br><span>Sardaryan</span></h1>
+      <p>
+        <span class="code-tag">&lt;code&gt;</span>
+        <span class="hero-intro"> turning ideas into full-stack reality</span>
+        <span class="code-tag">&lt;/code&gt;</span>
+      </p>
+      </p>
+      <p class="hero-desc">
+        Full Stack Developer based in Yerevan, Armenia. I build clean, scalable web applications across the
+        entire stack — from responsive UIs to backend logic and database design.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">CONTACT ME</a>
+        <a href="#experience" class="btn-secondary">VIEW WORK</a>
       </div>
+    </div>
 
-      <!-- FLOATING ICONS -->
+    <div class="hero-nets">
+      <a href="https://github.com/alexsardaryan1-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/alex-sardaryan-34b623398" target="_blank"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61574108137463" target="_blank"><i
+          class="fa-brands fa-facebook-f"></i></a>
+    </div>
 
-      <div class="mode-change">
-        <i class="fa-regular fa-sun icon-mode"></i>
-      </div>
-      <div class="menu-burger" id="menuBurger">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="cv-download">
-        <i class="fa-solid fa-file-arrow-down icon-download"></i>
-      </div>
-    </aside>
+    <div class="hero-scrollsign">SCROLL DOWN</div>
+  </section>
 
-    <!-- RIGHT CARD-->
-
-    <main>
-
-      <section id="home">
-        <h1>Hi, I'm Alex Sardaryan 👋</h1>
-        <p>I'm a passionate front-end developer based in Yerevan, Armenia. I love building clean, modern, and responsive
-          web interfaces that look great and work even better.</p>
-        <p>Currently open for freelance opportunities and full-time positions. Let's build something amazing together.
-        </p>
-      </section>
-
-      
- 
-
-      <button class="scroll-top">
-        <i class="fa-solid fa-chevron-up"></i>
-      </button>
-
-    </main>
-
-  </div>
 
 
   <script src="js/main.js"></script>
